@@ -50,16 +50,3 @@
     opacity: 1;
   }
   
-body {
-    background-color: yellow !important;
-}
-
-section.resume-section {
-    background-color: transparent !important;
-  }
-
-a:hover, a:focus, a:active {
-    background-color: rgb(255, 255, 255) !important; /* Change this color as you prefer */
-    color: #000 !important; /* Adjust the text color if needed */
-  }
-  

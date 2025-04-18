@@ -113,3 +113,46 @@ a {
   color: #BD5D38; }
   a:hover, a:focus, a:active {
     color: #824027; }
+
+
+    /* Photo gallery custom hover effect */
+.photo-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.photo-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(0px);
+}
+
+.photo-box:hover img {
+  filter: blur(2px); /* 50% blur approximation */
+}
+
+.photo-box:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black transparency */
+  opacity: 1;
+  backdrop-filter: blur(2px);
+}
