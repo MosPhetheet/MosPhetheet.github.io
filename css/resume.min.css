@@ -40,4 +40,18 @@
   .photo-box:hover .overlay {
     opacity: 1;
   }
+ 
+  .event-item {
+    display: flex;
+    gap: 1rem; /* spacing between date and text */
+  }
   
+  .event-date {
+    color: #BD5D38;
+    min-width: 100px; /* ensures all descriptions align */
+    display: inline-block;
+  }
+  
+  .event-text {
+    flex: 1;
+  } 
